@@ -1,0 +1,11 @@
+<h1>MESSAGE</h1>
+
+<% if @included %>
+    <% if @english_word %>
+      <%= "The #{@word} is a valid English word, well done!" %>
+    <% else %>
+      <%="The #{@word} is not a valid English word"%>
+   <% end %>
+ <%else %>
+ <%= "The #{@word} is not in the grid" %>
+<% end %>
